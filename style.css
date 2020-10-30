@@ -24,7 +24,7 @@ a.headerButton{
     font-weight: 900;
     text-decoration: none;
     color: #004e38;
-    transition: color 2s;
+    transition: color 0.5s;
 }
 
 a.headerButton:hover{
