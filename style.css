@@ -52,9 +52,12 @@ img.headerButton:hover{
     position: relative;
 }
 img.splashImage{
-    max-width: 100%;
+    min-width: 100%;
+    max-height: 300px;
+    writing-mode: vertical-rl;
     display: block;
-    margin: auto;
+    margin: 0%;
+    object-fit: cover;
 }
 
 .topLeft {
@@ -63,18 +66,19 @@ img.splashImage{
     left: 18px;
     font-size: 30px;
     color: White;
-    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-width: 0.25px;
     -webkit-text-stroke-color: black;
 }
 
 /*Landing page and links area*/
 .prompt{
-    background-color: #004e38;
+    background-color: rgb(0, 46, 35);   /*Redwood Grove Green*/
     width: 100%;
     text-align: center;
-    margin: auto;
+    margin: 0;
     padding: 30px;
     font-size: 50px;
+    color: rgb(218, 212, 144);         /*White Birch*/
 }
 
 .linkHolderMain{
