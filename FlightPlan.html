@@ -6,57 +6,70 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <!-- Header --> 
+        <!-- Header -->
         <div class="headerBar">
             <a href = "https://www.csus.edu/"><img class="headerButton" alt="Sac State logo" src="https://www.csus.edu/NewCSUS2019-global-assets/_internal/images/logo-horizontal.png"></a>
-            <div class="buttonGroup">
-                <a href = "https://www.csus.edu/apply/" class="headerButton">APPLY</a>
-                <a href = "https://www.csus.edu/experience/" class="headerButton">EXPERIENCE</a>
-                <a href = "https://www.csus.edu/campaign/" class="headerButton">GIVE</a>
-            </div>
+            <a href = "https://www.csus.edu/apply/" class="headerButton">APPLY</a>
+            <a href = "https://www.csus.edu/experience/" class="headerButton">EXPERIENCE</a>
+            <a href = "https://www.csus.edu/campaign/" class="headerButton">GIVE</a>
         </div>
         <div class="splashImage">
             <img class="splashImage" src="images/Parking.jpg" alt = "Parking Garage">
             <div class="topLeft">Transportation <br>Information</div>
         </div>
-        <div class="landingpage">
-            <div class="prompt"> <u>More About Your Commute</u></div>
+        <div>
             <div class="linkHolderMain">
+              <div class="prompt">More About Your Commute</div>
+              <div class="linkAndImage">
                 <div class="linkHolder" onmouseover="menu1on()" onmouseout="menu1off()">
                     <h1>Driving</h1>
                     <ul class="linkHolderMenu" id="menu-box1" style="display: none">
-                        <li><a href="https://www.csus.edu/parking-transportation/parking/">Parking Services</a></li>
+                        <li><a href="https://www.csus.edu/parking-transportation/parking">Parking Services</a></li>
                         <li><a href="https://sacstate.t2hosted.com/Account/Portal">Purchase Permit Online</a></li>
                         <li><a href="https://www.csus.edu/parking-transportation/parking/permit-pricing.html">Permit Fees</a></li>
                         <li><a href="https://www.csus.edu/campusmap/2019junecolor-map.pdf">Parking Map</a></li>
-                        <li><a href="https://www.csus.edu/campusmap/">Parking Availability</a></li>
-                        <li><a href="https://www.csus.edu/parking-transportation/alternative-transportation/carpooling.html">Carpool</a></li>
-                        <li><a href="#">Zipcar Carsharing</a></li>
+                        <li><a href="https://www.csus.edu/campusmap">Parking Availability</a></li>
                     </ul>
                 </div>
+                <img class="imageHolder" src="images/SacState_Vehicle.jpg">
+              </div>
+              <div class="linkAndImage">
+                <img class="imageHolder" src="images/SacState_Shuttle1.jpg">
                 <div class="linkHolder" onmouseover="menu2on()" onmouseout="menu2off()">
                     <h1>Public Transportation</h1>
                     <ul class="linkHolderMenu" id="menu-box2" style="display: none">
-                        <li><a href="https://www.csus.edu/parking-transportation/shuttle/">On-Campus Shuttle Information</a></li>
+                        <li><a href="https://www.csus.edu/parking-transportation/shuttle">On-Campus Shuttle Information</a></li>
                         <li><a href="#">Public Bus Information</a></li>
                         <li><a href="https://www.csus.edu/parking-transportation/alternative-transportation/commuter-sleeve.html">Commuter Sleeve Information</a></li>
-                        <li><a href="https://sacstate.t2hosted.com/Account/Portal">Commuter Sleeve Via Mail</a></li>
-
+                        <li><a href="https://sacstate.t2hosted.com/Account/Portal">Commuter Sleeve via Mail</a></li>
                     </ul>
                 </div>
+              </div>
+              <div class="linkAndImage">
                 <div class="linkHolder" onmouseover="menu3on()" onmouseout="menu3off()">
-                    <h1>Biking/Walking</h1>
+                    <h1>Biking or Walking</h1>
                     <ul class="linkHolderMenu" id="menu-box3" style="display: none">
-                        <li><a href="https://www.peakadventures.org/bike-shop">Campus Bike Shop</a></li>
+                        <li><a href="https://www.peakadventures.org/bike-shop">Campus Bike Store</a></li>
                         <li><a href="#">Bike Routes and Paths</a></li>
-                        <li><a href="https://www.csus.edu/campusmap/">Bike Compound Availability</a></li>
-                        <li><a href="https://www.csus.edu/campusmap/">Campus Map</a></li>
+                        <li><a href="https://www.csus.edu/campusmap">Bike Compound Availability</a></li>
+                        <li><a href="https://www.csus.edu/campusmap">Campus Map</a></li>
                     </ul>
                 </div>
-                
+                <img class="imageHolder" src="images/SacState_WalkBike.jpg">
+              </div>
+              <div class="linkAndImage">
+                <img class="imageHolder" src="images/SacState_Carpool.jpg">
+                <div class="linkHolder" onmouseover="menu4on()" onmouseout="menu4off()">
+                  <h1>Carpool</h1>
+                  <ul class="linkHolderMenu" id="menu-box4" style="display: none">
+                    <li><a href="#">Carpool Parking Pass</a></li>
+                    <li><a href="https://www.csus.edu/parking-transportation/alternative-transportation/carpooling.html">Carpool Information</a></li>
+                    <li><a href="#">Zipcar Carsharing</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
         </div>
-
         <div class="infoGroup">
             <div class="oneEntry imgLeft">
                 <img src="#" alt="car Image">
@@ -86,7 +99,7 @@
                 </ul>
             </div>
             <div class="oneEntry">
-                
+
                 <ul>
                     <li>Average MPG: </li><br>
                     <li>Average Carbon Footprint: </li><br>
@@ -107,5 +120,6 @@
         </div>
         <script src="elementsJavascript.js"></script>
     </body>
+
 
 </html>
