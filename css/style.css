@@ -87,7 +87,8 @@ img.splashImage{
     margin: 0;
     padding: 30px;
     font-size: 50px;
-    color: #c4b581;         /*White Birch*/
+    color: #c4b581;
+    position: relative;
 }
 
 .linkHolderMain{
@@ -147,6 +148,7 @@ img.splashImage{
     font-weight: bold;
     color: white;
     border: 1px solid black;
+    position: relative;
 }
 
 .oneEntry img{
@@ -166,4 +168,43 @@ img.splashImage{
 
 .imgLeft ul li{
     float: right;
+}
+
+/* ====== stripes ====== */
+
+/*stripe top */
+.oneEntry:before { /* have to make each item have a position (i think) */
+    content: ' ';
+    display: block;
+    width: 100%;
+    padding: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*stripe bottom */
+.prompt:after,
+.splashImage:after { /* have to make each item have a position (i think) */
+    content: ' ';
+    display: block;
+    width: 100%;
+    padding: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/*stripe start purple */
+.prompt:after,
+.splashImage:after,
+.oneEntry:nth-child(odd):before {
+    background: -webkit-gradient(linear, right top, left top, color-stop(25%, #008453), color-stop(40%, #ce7712), color-stop(60%, #fafa43), to(#380042));
+    background: linear-gradient(270deg, #008453 25%, #ce7712 40%, #fafa43 60%, #380042 100%);
+}
+
+/*start green */
+.oneEntry:nth-child(even):before {
+    background: -webkit-gradient(linear, left top, right top, color-stop(25%, #008453), color-stop(40%, #ce7712), color-stop(60%, #fafa43), to(#380042));
+    background: linear-gradient(90deg, #008453 25%, #ce7712 40%, #fafa43 60%, #380042 100%);
 }
