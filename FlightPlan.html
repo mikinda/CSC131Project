@@ -3,7 +3,7 @@
     <head>
         <title>Flight Plan</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <!-- Header --> 
@@ -105,7 +105,72 @@
                 </ul>
             </div>
         </div>
-        <script src="elementsJavascript.js"></script>
+
+        <button class="open-button" onclick="openForm()">Open Form</button>
+        
+        <div class="form-popup" id="theSurvay">
+		<form onsubmit="submitSurvay()" class="form-container">
+			<label for="tTravelPerWeek"><b>How many times do you travel to campus</b></label>
+			<input type="text" placeholder="Number of days traveld to campus per week" name="tTravelPerWeek">
+
+			<label for="address"><b>Address</b></label> 
+			<input type="text" placeholder="Enter Address" name="address"> 
+            
+            <label for="driveSlider"><b>Would you concider driving to campus?</b></label>
+            <div class="slider" id="driveSlider">
+
+                <input type="checkbox" name="carSwitch" class="slider-checkbox" id="carSwitch" onclick="checkIfShowCarFields()" checked> 
+                <label class="slider-label" for="carSwitch">
+                  <span class="slider-inner"></span>
+                  <span class="slider-circle"></span>
+                </label>
+              </div>
+			
+			<div class ="survayQuestion" id="userDrivesCar">
+                <label for="parkOnCampus"><b>Do you plan on parking on campus?</b></label>
+                <div class="slider" id="parkOnCampus">
+                    <input type="checkbox" name="parkOnCampusSlider" class="slider-checkbox" id="parkOnCampusSlider" checked>
+                    <label class="slider-label" for="parkOnCampusSlider">
+                        <span class="slider-inner"></span>
+                        <span class="slider-circle"></span>
+                </div>
+
+				<label for="mpg"><b>What is your MPG?</b></label> 
+				<input type="text" placeholder="Enter MPG" name="mpg"> 
+				<label for="gasPrice"><b>How much do you pay per gallon?</b></label> 
+				<input type="text" placeholder="e.g. 2.65" name="gasPrice"> 
+            </div>
+            
+            <label for="carPoolSlider"><b>Would you concider carpooling to campus?</b></label>
+            <div class="slider" id="carPoolSlider">
+                <input type="checkbox" name="carPoolSwitch" class="slider-checkbox" id="carPoolSwitch" onclick="checkIfShowCarPoolFields()" checked> 
+                <label class="slider-label" for="carPoolSwitch">
+                  <span class="slider-inner"></span>
+                  <span class="slider-circle"></span>
+                </label>
+            </div>
+
+              <div class ="survayQuestion" id="userWouldCarPool">
+                <label for="WantsToMatch"><b>Would You like to be matched with other students?</b></label>
+                <div class="slider" id="WantsToMatch">
+                    <input type="checkbox" name="WantsToMatch" class="slider-checkbox" id="WantsToMatch" checked>
+                    <label class="slider-label" for="WantsToMatch">
+                        <span class="slider-inner"></span>
+                        <span class="slider-circle"></span>
+                </div>
+              </div>
+
+
+			
+
+
+			<button type="submit" class="btn">Save and customize these
+				results!</button>
+			<button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+		</form>
+        
+        <script src="scripts/elementsJavascript.js"></script>
+        <script src="scripts/survay.js"></script>
     </body>
 
 </html>

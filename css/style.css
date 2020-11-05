@@ -1,3 +1,6 @@
+@import url(formStyle.css);
+@import url(switches.css);
+
 html, body{
     overflow-x: hidden;
     padding: 0;
